@@ -29,6 +29,16 @@ include_once('JBPizzaFactory.php');
 
        echo "<br> ---------------------------------------------------- <br>";
 
+
+      $pizzaJB2 = $jbPizzaFactoryInstance->makeSkinnyPizza();
+
+      echo'<br><br><br> Pizza Name: '.$pizzaJB2->getPizzaName();
+      echo "<br>";
+      echo'<br> Pizza Size: '.$pizzaJB2->getPizzaSize();
+      echo "<br>";
+      echo'<br> Pizza Price: '.$pizzaJB2->getPizzaPrice();
+
+       echo "<br> ---------------------------------------------------- <br>";
  
   }
 

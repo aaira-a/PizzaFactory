@@ -2,6 +2,7 @@
 
   include_once('AbstractJBPizzaFactory.php'); 
   include_once('JBClassicPizza.php');
+  include_once('JBSkinnyPizza.php');
 
   class JBPizzaFactory extends AbstractJBPizzaFactory {
   
@@ -12,6 +13,11 @@
        return new JBClassicPizza;
      }
 
+
+    function makeSkinnyPizza()
+     {
+       return new JBSkinnyPizza;
+     }
    
    
   }
